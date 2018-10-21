@@ -1,0 +1,20 @@
+Anagram_checker
+
+About the gui
+1.developed using swing components
+2.components used jtextfield(x2),jlabel(x3),jbutton(x2)
+
+Backend
+1.Words entered in text field are recognized as string word1 and word2
+2.lenghts of bith these words re compared     if length is not same then message "not anagram is shown"
+3.if lenghts are same then the two strings are converted to character array
+4.these character arrays are sroted using Arrays.sort(array_name) function
+5.After sorting they are compared using Array.equals(array1,array2)
+6.if both the arrays are same then the message "Both are anagram" is shown
+7.Else "not anagram" is shown and manipulations required is calculated
+8.for this step all the distinct characters from word1 are stored in another character array
+9.iterate through the second string 
+10.update char_count. 
+11.if character is not found in char_count 
+12.then increase count
+13.Display the count in label 3 
