@@ -1,0 +1,5 @@
+Data Structure used:Linked list
+
+paste the temp file in the same location as .c file
+
+after entering new word end it with "."
