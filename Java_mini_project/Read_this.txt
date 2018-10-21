@@ -1,0 +1,9 @@
+This mini-project was done by me as a part of syllabus in SE IT
+Softwares/Ide's used:
+1.Eclipse neon.2
+2.Gluon Scenebuilder
+Database-postgreSQL
+Text-to-Speech converter-Mary TTs
+
+There are lot of unused functions and unsed .java files as i was unable to complete them on time
+feel free to use them any way you wish
