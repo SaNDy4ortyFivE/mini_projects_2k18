@@ -7,3 +7,5 @@ Text-to-Speech converter-Mary TTs
 
 There are lot of unused functions and unsed .java files as i was unable to complete them on time
 feel free to use them any way you wish
+
+.jar file name-logintry.jar
