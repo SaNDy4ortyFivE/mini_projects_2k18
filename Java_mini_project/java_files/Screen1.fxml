@@ -1,0 +1,71 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import com.jfoenix.controls.JFXButton?>
+<?import com.jfoenix.controls.JFXPasswordField?>
+<?import com.jfoenix.controls.JFXTextField?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.effect.Blend?>
+<?import javafx.scene.image.Image?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.text.Font?>
+
+<AnchorPane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="500.0" prefWidth="750.0" style="-fx-background-color: #151928;" xmlns="http://javafx.com/javafx/8.0.171" xmlns:fx="http://javafx.com/fxml/1" fx:controller="application.SampleController">
+   <children>
+      <Label alignment="CENTER" contentDisplay="CENTER" layoutX="337.0" layoutY="48.0" prefHeight="37.0" prefWidth="129.0" style="-fx-background-color: #151928;" text="AArK" textAlignment="CENTER" textFill="#2196f6" textOverrun="CENTER_ELLIPSIS" underline="true">
+         <font>
+            <Font size="30.0" />
+         </font>
+         <effect>
+            <Blend />
+         </effect>
+      </Label>
+      <JFXTextField fx:id="email" focusColor="#2196f3" labelFloat="true" layoutX="177.0" layoutY="276.0" prefHeight="38.0" prefWidth="356.0" promptText="Email" style="-fx-background-color: #151928; -fx-text-inner-color: white;" unFocusColor="#00e676">
+         <font>
+            <Font size="17.0" />
+         </font>
+      </JFXTextField>
+      <JFXPasswordField fx:id="password" focusColor="#2196f3" labelFloat="true" layoutX="177.0" layoutY="345.0" prefHeight="37.0" prefWidth="356.0" promptText="password" style="-fx-background-color: #151928; -fx-text-inner-color: white;" unFocusColor="#00e676">
+         <font>
+            <Font size="17.0" />
+         </font>
+      </JFXPasswordField>
+      <JFXButton fx:id="button1" buttonType="RAISED" layoutX="177.0" layoutY="417.0" onAction="#btnlogin" prefHeight="37.0" prefWidth="160.0" style="-fx-background-color: #00E676;" text="login" textFill="WHITE">
+         <font>
+            <Font size="15.0" />
+         </font>
+      </JFXButton>
+      <JFXButton fx:id="signup" layoutX="607.0" layoutY="14.0" onAction="#adduser" prefHeight="37.0" prefWidth="129.0" style="-fx-background-color: #151928;" text="Signup-&gt;" textFill="#3c58fa">
+         <font>
+            <Font size="15.0" />
+         </font>
+      </JFXButton>
+      <JFXButton fx:id="forgotpassword" layoutX="373.0" layoutY="417.0" onAction="#changepassword" prefHeight="37.0" prefWidth="160.0" text="forgot password" textFill="#3c58fa" underline="true">
+         <font>
+            <Font size="15.0" />
+         </font>
+      </JFXButton>
+      <JFXButton layoutY="14.0" prefHeight="37.0" prefWidth="129.0" text="About-&gt;" textFill="#3c58fa">
+         <font>
+            <Font size="15.0" />
+         </font>
+      </JFXButton>
+      <Label layoutX="224.0" layoutY="52.0" prefHeight="37.0" prefWidth="134.0" text="Welcome to" textFill="#2196f3">
+         <font>
+            <Font size="25.0" />
+         </font>
+      </Label>
+      <Label alignment="CENTER" contentDisplay="CENTER" layoutX="291.0" layoutY="217.0" prefHeight="37.0" prefWidth="129.0" text="Signin" textFill="#2196f3">
+         <font>
+            <Font size="15.0" />
+         </font>
+      </Label>
+      <ImageView fitHeight="208.0" fitWidth="300.0" layoutX="206.0" layoutY="90.0" pickOnBounds="true" preserveRatio="true">
+         <image>
+            <Image url="application/image.png" />
+         </image>
+      </ImageView>
+      <Label fx:id="status" layoutX="177.0" layoutY="393.0" prefHeight="17.0" prefWidth="356.0" textFill="#ff0900" />
+      <JFXButton fx:id="click" buttonType="RAISED" layoutX="607.0" layoutY="423.0" onAction="#changetoinbox" text="click" />
+   </children>
+</AnchorPane>

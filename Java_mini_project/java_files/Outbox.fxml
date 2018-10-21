@@ -1,0 +1,55 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import com.jfoenix.controls.JFXButton?>
+<?import javafx.geometry.Insets?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.Separator?>
+<?import javafx.scene.control.TableColumn?>
+<?import javafx.scene.control.TableView?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.layout.VBox?>
+<?import javafx.scene.text.Font?>
+
+<AnchorPane prefHeight="524.0" prefWidth="818.0" style="-fx-background-color: #151928;" xmlns="http://javafx.com/javafx/8.0.171" xmlns:fx="http://javafx.com/fxml/1" fx:controller="application.OutBoxController">
+   <children>
+      <TableView fx:id="table" layoutX="195.0" layoutY="28.0" prefHeight="429.0" prefWidth="623.0" style="-fx-background-color: #a6eaea;" AnchorPane.bottomAnchor="67.0" AnchorPane.leftAnchor="195.0" AnchorPane.rightAnchor="0.0" AnchorPane.topAnchor="28.0">
+        <columns>
+          <TableColumn fx:id="col_receiver" prefWidth="209.0" text="receiver" />
+          <TableColumn fx:id="col_subject" prefWidth="453.0" text="subject" />
+        </columns>
+         <padding>
+            <Insets bottom="5.0" left="5.0" right="5.0" top="5.0" />
+         </padding>
+      </TableView>
+      <Label fx:id="account_name" alignment="CENTER_RIGHT" layoutX="572.0" layoutY="6.0" prefHeight="17.0" prefWidth="232.0" textFill="WHITE" />
+      <VBox alignment="TOP_CENTER" layoutX="14.0" layoutY="28.0" prefHeight="429.0" prefWidth="160.0">
+         <children>
+            <JFXButton fx:id="inbox" buttonType="RAISED" onAction="#changetoinbox" prefHeight="45.0" prefWidth="155.0" style="-fx-background-color: #00E676;" text="Inbox" textFill="WHITE">
+               <font>
+                  <Font size="15.0" />
+               </font></JFXButton>
+            <Separator prefHeight="10.0" prefWidth="160.0" />
+            <JFXButton fx:id="changecompose" buttonType="RAISED" onAction="#changetocompose" prefHeight="45.0" prefWidth="155.0" style="-fx-background-color: #00E676;" text="Compose" textFill="WHITE">
+               <font>
+                  <Font size="15.0" />
+               </font></JFXButton>
+            <Separator prefHeight="10.0" prefWidth="160.0" />
+            <JFXButton fx:id="LOG_out" buttonType="RAISED" onAction="#backtomainscreen" prefHeight="45.0" prefWidth="155.0" style="-fx-background-color: #00E676;" text="Log out" textFill="WHITE">
+               <font>
+                  <Font size="15.0" />
+               </font>
+            </JFXButton>
+         </children>
+      </VBox>
+      <JFXButton fx:id="viewmessage" buttonType="RAISED" layoutX="195.0" layoutY="471.0" onAction="#viewmessage" prefHeight="45.0" prefWidth="155.0" style="-fx-background-color: #f43e06;" text="View" textFill="WHITE">
+         <font>
+            <Font size="15.0" />
+         </font></JFXButton>
+      <Label layoutX="17.0" layoutY="6.0" prefHeight="17.0" prefWidth="423.0" style="-fx-background-color: #f43e06;" text="OUTBOX-&gt;" textFill="WHITE" />
+      <JFXButton fx:id="saymessage" alignment="CENTER" buttonType="RAISED" layoutX="649.0" layoutY="471.0" onAction="#saythedamnmessage" prefHeight="45.0" prefWidth="155.0" style="-fx-background-color: #f43e06;" text="Read" textFill="WHITE">
+         <font>
+            <Font size="15.0" />
+         </font>
+      </JFXButton>
+   </children>
+</AnchorPane>
